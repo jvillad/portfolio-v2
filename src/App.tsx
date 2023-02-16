@@ -2,6 +2,7 @@ import Intro from './components/Intro';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import '@fontsource/ubuntu';
+import Contacts from './components/Contacts';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Nav />
       <Intro />
       <Projects />
+      <Contacts />
     </div>
   );
 }
