@@ -1,6 +1,6 @@
 function Nav() {
   return (
-    <nav className="py-10 m-auto">
+    <nav className="py-10 max-w-[1200px] mx-auto">
       <div className="flex justify-around">
         {/* branding/logo */}
         <div>
