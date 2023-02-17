@@ -22,7 +22,8 @@
     "src",
     "./src/**/*",
     "./tailwind.config.cjs",
-    "server/**/*"
+    "server/**/*",
+    "lib/**/*"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
