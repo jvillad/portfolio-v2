@@ -1,32 +1,40 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
-
-interface IProject {
-  owner: string;
-  repo: string;
-  link: string;
-  description: string;
-}
+import getUser from '../../lib/helper/getPinnedProjects';
+// import getRepo from '../../lib/helper/getProjectLang';
+import {
+  // ILangResponse1,
+  // ILangResponse2,
+  // ILangResponse3,
+  IPinnedProjects,
+} from '../../lib/interface/IGlobal';
 
 function Projects() {
-  const [projects, setProjects] = useState<IProject[]>();
+  const [projects, setProjects] = useState<IPinnedProjects[]>();
+  // const [languages, setLanguages] = useState<
+  //   ILangResponse1[] | ILangResponse2[] | ILangResponse3[]
+  // >();
 
-  const baseUrl = 'https://gh-pinned-repos.egoist.dev/?username=jvillad';
   useEffect(() => {
-    axios.get(baseUrl).then((response: any) => {
-      setProjects(response.data);
-    });
+    getUser(setProjects);
   }, []);
+
+  // TODO: OAuth
+  // useEffect(() => {
+  //   if (projects) {
+  //     getRepo(projects, setLanguages);
+  //   }
+  // }, [projects]);
 
   return (
     <section className="max-w-[1200px] mx-auto px-[16px]">
       <div>Projects that I am proud of: </div>
       <div>
         {projects &&
-          projects.map((el) => (
-            <div key={el.repo}>
-              <div>{el.repo}</div>
-              <div>{el.description}</div>
+          projects.map((proj) => (
+            <div key={proj.repo}>
+              <img src={proj.image} alt={proj.repo} />
+              <div>{proj.language}</div>
+              <a href={proj.link}>GitHub Repo</a>
             </div>
           ))}
       </div>
