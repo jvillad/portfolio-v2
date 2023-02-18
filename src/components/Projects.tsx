@@ -7,6 +7,7 @@ import {
   // ILangResponse3,
   IPinnedProjects,
 } from '../../lib/interface/IGlobal';
+import DisplayProj from './DisplayProj';
 
 function Projects() {
   const [projects, setProjects] = useState<IPinnedProjects[]>();
@@ -28,13 +29,11 @@ function Projects() {
   return (
     <section className="max-w-[1200px] mx-auto px-[16px]">
       <div>Projects that I am proud of: </div>
-      <div>
+      <div className="grid grid-cols-2 place-content-center">
         {projects &&
           projects.map((proj) => (
-            <div key={proj.repo}>
-              <img src={proj.image} alt={proj.repo} />
-              <div>{proj.language}</div>
-              <a href={proj.link}>GitHub Repo</a>
+            <div key={proj.repo} className="flex justify-center p-2">
+              <DisplayProj proj={proj} />
             </div>
           ))}
       </div>
