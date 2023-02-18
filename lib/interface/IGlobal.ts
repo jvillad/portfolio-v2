@@ -5,7 +5,20 @@ export interface IPinnedProjects {
   description: string;
   image: string;
   language: string;
+  languageColor: string;
 }
+
+export type TProject = {
+  proj: {
+    owner: string;
+    repo: string;
+    link: string;
+    description: string;
+    image: string;
+    language: string;
+    languageColor: string;
+  };
+};
 
 export interface ILangResponse1 {
   lang1: string;
