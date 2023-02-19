@@ -20,17 +20,17 @@ export type TProject = {
   };
 };
 
-export interface ILangResponse1 {
-  lang1: string;
-  lang2: string;
-}
-export interface ILangResponse2 {
-  lang1: string;
-  lang2: string;
-  lang3: string;
-}
+// export interface ILangResponse1 {
+//   lang1: string;
+//   lang2: string;
+// }
+// export interface ILangResponse2 {
+//   lang1: string;
+//   lang2: string;
+//   lang3: string;
+// }
 
-export interface ILangResponse3 {
+export interface ILangResponse1 {
   lang1: string;
   lang2: string;
   lang3: string;
