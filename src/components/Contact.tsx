@@ -1,7 +1,7 @@
-function Contacts() {
+function Contact() {
   return (
-    <div className="max-w-[1200px] text-center px-[16px] pt-[100px]  mx-auto">
-      <p>Contact Me</p>
+    <div className="max-w-[1200px] text-center px-[16px] pt-[150px] mx-auto pb-[150px]">
+      <p>Get In Touch</p>
       <p>
         My inbox is always open for opportunities, suggestions and collaboration
       </p>
@@ -10,4 +10,4 @@ function Contacts() {
   );
 }
 
-export default Contacts;
+export default Contact;
