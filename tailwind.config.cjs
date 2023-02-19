@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         ubuntu: ['ubuntu'],
+        poppins: ['Inter'],
+        raleway: ['Raleway'],
       },
     },
   },
