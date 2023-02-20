@@ -22,7 +22,7 @@ function DisplayProj({ proj }: TProject) {
       key={project.repo}
       className="bg-gray-700 text-white text-center rounded p-1"
     >
-      <a href={project.link}>
+      <a href={project.link} target="_blank" rel="noreferrer">
         <img
           src={project.image}
           alt={project.repo}
@@ -30,7 +30,9 @@ function DisplayProj({ proj }: TProject) {
         />
         <div className="text-xs p-1">
           {langKeys?.map((key) => (
-            <p key={key}>{key}</p>
+            <p key={key} className="text-gray-200 text-[10px]">
+              {key}
+            </p>
           ))}
         </div>
       </a>
