@@ -1,18 +1,20 @@
 function Intro() {
   return (
-    <section className="max-w-[900px] mx-auto pt-[65px] pr-[16px] pb-[150px] pl-[16px]">
+    <section className="max-w-[900px] mx-auto pt-[80px] pr-[16px] pb-[100px] pl-[16px] h-screen">
       <p>
-        Yo!👋🏼 my name is
-        <span className="block text-[64px]">John Villademosa</span>
+        <span className="text-2xl pb-2">
+          <span className="text-yellow-800">Yo! 👋🏼</span> my name is
+        </span>
+        <span className="block text-[50px] md:text-[64px]">
+          John Villademosa
+        </span>
       </p>
-      <p className="pb-4">An aspiring Software Developer. </p>
-      <p>
-        Currently doing Diploma of InfoTech (Advanced Programming). Focusing my
-        learning on ASP.Net Core MVC, PostgresSQL and TypeScript. Also, spending
-        some time building web applications in React and NextJS.
-      </p>
-      <p className="pt-4">
-        All of my work can be seen through my <a href="/">GitHub</a> profile.
+      <p className="pb-6 text-2xl pt-2">An aspiring Software Developer. </p>
+      <p className=" text-xl md:text-2xl leading-relaxed">
+        Currently doing Diploma of InfoTech (Advanced Programming) in TAFE NSW -
+        Hornsby. Focusing my learning on ASP.Net Core MVC, PostgresSQL and
+        TypeScript. Also, spending some time building web applications in React
+        and NextJS.
       </p>
     </section>
   );
