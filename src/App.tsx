@@ -7,11 +7,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-inter text-gray-700 max-w-[900px] mx-auto">
+    <div>
       <Nav />
-      <Intro />
-      <Projects />
-      <Contact />
+      <div className="font-inter text-gray-700 max-w-[900px] mx-auto">
+        <Intro />
+        <Projects />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
