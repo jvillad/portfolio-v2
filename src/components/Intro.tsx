@@ -11,10 +11,8 @@ function Intro() {
       </p>
       <p className="pb-6 text-2xl pt-2">An aspiring Software Developer. </p>
       <p className=" text-xl md:text-2xl leading-relaxed">
-        Currently doing Diploma of InfoTech (Advanced Programming) in TAFE NSW -
-        Hornsby. Focusing my learning on ASP.Net Core MVC, PostgresSQL and
-        TypeScript. Also, spending some time building web applications in React
-        and NextJS.
+        Focusing my learning on ASP.Net Core MVC, PostgresSQL and TypeScript.
+        Also, spending some time building web applications in React and NextJS.
       </p>
     </section>
   );
