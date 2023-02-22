@@ -12,7 +12,7 @@ function Projects() {
 
   return (
     <section className="max-w-[1200px] mx-auto px-[16px]">
-      <div className="py-10 text-[18px]">Projects that I am proud of:</div>
+      <div className="py-10 text-[24px]">Some things I have built:</div>
       <div className="grid grid-cols-1 place-content-center md:grid-cols-2 md:place-content-center">
         {projects &&
           projects.map((proj) => (
