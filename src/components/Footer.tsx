@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="bg-gray-800 text-gray-100 p-8 text-center bottom-0 w-full">
+    <div className="bg-gray-800 text-gray-100 p-8 text-center  w-full">
       Created using React + Vite and TailwindCSS.
     </div>
   );
