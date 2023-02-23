@@ -60,7 +60,7 @@ function Nav() {
         <div
           className={` ${
             !open && 'hidden'
-          } font-bold w-full text-center text-gray-600 md:flex md:items-center md:justify-between md:w-3/5`}
+          }  w-full text-center text-gray-600 md:flex md:items-center md:justify-between md:w-3/5`}
         >
           <div className="pt-10 pb-2 md:pt-2">
             <a href="/" className="hover:text-rose-600">
@@ -69,7 +69,7 @@ function Nav() {
           </div>
           <hr />
           <div className="py-2">
-            <a href="/" className="hover:text-rose-600">
+            <a href="/about" className="hover:text-rose-600">
               About
             </a>
           </div>
@@ -123,7 +123,7 @@ function Nav() {
               href="/"
               className="bg-yellow-400 p-3 text-yellow-800 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
             >
-              Resumé
+              <span className="font-light">Resumé</span>
             </a>
           </div>
         </div>
