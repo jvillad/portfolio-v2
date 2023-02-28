@@ -33,7 +33,7 @@ function DisplayProj({ proj }: TProject) {
           {langKeys?.map((key) => (
             <div
               key={key}
-              className="flex items-center w-[80px] max-w-full justify-between mx-auto py-[2px]"
+              className="flex items-center w-[160px] max-w-full justify-between mx-auto py-[2px] gap-10"
             >
               <SelectIcon progLang={key} />
               <p className="text-gray-200 text-[10px]">{key}</p>
