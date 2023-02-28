@@ -23,7 +23,10 @@ function Projects() {
       </div>
       <p className="pt-4 text-xl">
         All of my work can be seen through my{' '}
-        <a href="/" className="text-yellow-800">
+        <a
+          href="/"
+          className="text-rose-600 hover:underline hover:underline-offset-4 hover:text-rose-900"
+        >
           GitHub
         </a>{' '}
         profile.
