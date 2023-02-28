@@ -2,21 +2,16 @@ function About() {
   return (
     <div className="h-[1050px] max-h-full text-gray-700 max-w-[700px] pt-[50px] mx-10">
       <h1 className="text-[32px] pb-10">Some fun facts about me: </h1>
-      {/* <SelectIcon progLang="C#" /> */}
       <div className="text-xl">
-        <p>📍 — Based in Sydney, Australia</p>
-        <p>😅 — I do enjoy creating web apps!</p>
+        <p>📍 Based in Sydney, Australia</p>
+        <p>😅 I do enjoy creating web apps!</p>
         <p>
-          📖 — I am currently doing Diploma of InfoTech (Advanced Programming)
-          in TAFE NSW - Hornsby.
+          🏃‍♂️ When not on my computer coding or playing video games. You can find
+          me outside running. My PR for half marathon is 1hour and 48 minutes
+          and 3hours and 51minutes for marathon.
         </p>
-        <p>
-          🏃‍♂️ — When not on my computer coding or playing video games. You can
-          find me outside running. My PR for half marathon is 1hour and 48
-          minutes and 3hours and 51minutes for marathon.
-        </p>
-        <p>🤓 — I like video games.. A lot</p>
-        <p>🐶 — Have a bias for dogs. In fact we have 11 🐶 back at home.</p>
+        <p>🤓 I like video games.. A lot</p>
+        <p>🐶 Have a bias for doggos. In fact we have 11 🐶 back at home.</p>
         <p className="pt-[50px]">Technologies I’ve been using recently:</p>
         <div className="grid grid-cols-2">
           <div className="pt-5">
