@@ -3,7 +3,7 @@ import { useState } from 'react';
 function Nav() {
   const [open, setOpen] = useState<boolean>(false);
   return (
-    <nav className="py-10 max-w-[1200px] mx-auto text-md">
+    <nav className="py-10 max-w-[900px] mx-auto text-md">
       <div className="flex flex-wrap justify-between mx-2 items-center md:py-0">
         {/* branding/logo */}
         <div className="text-gray-900 font-bold">
@@ -20,17 +20,20 @@ function Nav() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              strokeWidth="1.5"
+              fill="none"
               stroke="currentColor"
-              className="w-7 h-7 hover:cursor md:hidden block stroke-gray-900 stroke-2"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-align-justify w-7 h-7 hover:cursor md:hidden block stroke-gray-900 stroke-2"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
-              />
+              <line x1="21" y1="10" x2="3" y2="10" />
+              <line x1="21" y1="6" x2="3" y2="6" />
+              <line x1="21" y1="14" x2="3" y2="14" />
+              <line x1="21" y1="18" x2="3" y2="18" />
             </svg>
           </button>
         ) : (
