@@ -10,17 +10,19 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Nav />
-        <div className="font-inter text-gray-700 max-w-[900px] mx-auto">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </div>
-        <Footer />
-      </BrowserRouter>
+    <div className="font-inter">
+      <div className="px-4 ">
+        <BrowserRouter>
+          <Nav />
+          <div className=" text-gray-700 max-w-[900px] mx-auto">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </div>
+      <Footer />
     </div>
   );
 }
