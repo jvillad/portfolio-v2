@@ -30,3 +30,20 @@ export interface ILangResponse1 {
 export interface IProgLang {
   progLang: string;
 }
+
+export interface PinnedItem {
+  node: {
+    __typename: string;
+    id: string;
+    name: string;
+    url: string;
+    languages: {
+      nodes: {
+        name: string;
+      }[];
+    };
+    description: string;
+    openGraphImageUrl: string;
+  };
+  __typename: string;
+}
