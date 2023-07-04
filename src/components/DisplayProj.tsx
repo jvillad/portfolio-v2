@@ -1,42 +1,31 @@
-import { useEffect, useState } from 'react';
-import getRepo from '../../lib/helper/getProjectLang';
-import { ILangResponse1, TProject } from '../../lib/interface/IGlobal';
+import { PinnedItem } from '../../lib/interface/IGlobal';
 import SelectIcon from './SelectIcon';
 
-function DisplayProj({ proj }: TProject) {
-  const [languages, setLanguages] = useState<ILangResponse1>();
+interface DisplayProjProps {
+  proj: PinnedItem;
+}
+function DisplayProj({ proj }: DisplayProjProps) {
   const project = proj;
-
-  useEffect(() => {
-    if (project) {
-      getRepo(project, setLanguages);
-    }
-  }, [project]);
-
-  let langKeys;
-  if (languages) {
-    langKeys = Object.keys(languages);
-  }
 
   return (
     <div
-      key={project.repo}
+      key={project.node.id}
       className="bg-gray-800 text-white text-center rounded-md p-[2px]"
     >
-      <a href={project.link} target="_blank" rel="noreferrer">
+      <a href={project.node.url} target="_blank" rel="noreferrer">
         <img
-          src={project.image}
-          alt={project.repo}
+          src={project.node.openGraphImageUrl}
+          alt={project.node.description}
           className="w-[440px] h-[240px] min-w-[310px] rounded-t-md"
         />
         <div className="text-xs font-light p-1">
-          {langKeys?.map((key) => (
+          {project.node.languages.nodes.map((language) => (
             <div
-              key={key}
+              key={language.name}
               className="flex items-center w-[160px] max-w-full justify-between mx-auto py-[2px] gap-10"
             >
-              <SelectIcon progLang={key} />
-              <p className="text-gray-200 text-[10px]">{key}</p>
+              <SelectIcon progLang={language.name} />
+              <p className="text-gray-200 text-[10px]">{language.name}</p>
             </div>
           ))}
         </div>

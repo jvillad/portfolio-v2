@@ -1,22 +1,26 @@
 import { useEffect, useState } from 'react';
-import getUser from '../../lib/helper/getPinnedProjects';
-import { IPinnedProjects } from '../../lib/interface/IGlobal';
+import { useQuery, gql } from '@apollo/client';
+import { PinnedItem } from '../../lib/interface/IGlobal';
 import DisplayProj from './DisplayProj';
 
 function Projects() {
-  const [projects, setProjects] = useState<IPinnedProjects[]>();
-
+  const [pinnedItems, setPinnedItems] = useState<PinnedItem[]>([]);
+  const { data } = useQuery(gql`
+    query GetPinnedItems {
+      pinnedItems @client
+    }
+  `);
   useEffect(() => {
-    getUser(setProjects);
-  }, []);
+    setPinnedItems(data?.pinnedItems?.edges);
+  }, [data?.pinnedItems?.edges]);
 
   return (
     <section className="max-w-[1200px] mx-auto px-[16px]">
       <div className="py-10 text-[24px]">Some things I have built:</div>
       <div className="grid grid-cols-1 place-content-center md:grid-cols-2 md:place-content-center">
-        {projects &&
-          projects.map((proj) => (
-            <div key={proj.repo} className="flex justify-center p-2">
+        {pinnedItems &&
+          pinnedItems.map((proj) => (
+            <div key={proj.node.id} className="flex justify-center p-2">
               <DisplayProj proj={proj} />
             </div>
           ))}
