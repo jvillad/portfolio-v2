@@ -83,7 +83,7 @@ function Nav() {
             </a>
           </div>
           <hr />
-          <div className="py-3 grid place-content-center mr-5">
+          <div className="py-3 flex justify-center items-center">
             <a href="/" className="hover:text-rose-600">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ function Nav() {
               </svg>
             </a>
           </div>
-          <div className="py-3 grid place-content-center">
+          <div className="py-3 flex justify-center  items-center">
             <a href="/" className="hover:text-rose-600">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

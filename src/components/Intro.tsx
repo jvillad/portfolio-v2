@@ -13,8 +13,8 @@ function Intro() {
         An aspiring <span className="text-yellow-800">Software Developer.</span>
       </p>
       <p className="text-md md:text-xl leading-relaxed">
-        Focusing my learning on ASP.Net Core MVC, PostgresSQL and TypeScript.
-        Also, spending some time building web applications in React and NextJS.
+        Focusing my learning on ASP.Net Core, PostgreSQL and TypeScript. Also,
+        Also, spending so me time building web applications in React and NextJS.
       </p>
     </section>
   );
