@@ -47,3 +47,12 @@ export interface PinnedItem {
   };
   __typename: string;
 }
+
+export interface DisplayProjProps {
+  proj: PinnedItem;
+}
+
+export interface NavProps {
+  mode: string;
+  toggleMode: () => void;
+}

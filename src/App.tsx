@@ -1,20 +1,31 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-// import Intro from './components/Intro';
+import { useEffect, useState } from 'react';
 import Nav from './components/Nav';
-// import Projects from './components/Projects';
 import '@fontsource/ubuntu';
-// import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
 import Home from './components/Home';
 
 function App() {
+  const storedMode = localStorage.getItem('mode');
+  const [mode, setMode] = useState(storedMode || 'light');
+
+  const toggleMode = () => {
+    const newMode = mode === 'light' ? 'dark' : 'light';
+    setMode(newMode);
+    localStorage.setItem('mode', newMode);
+  };
+
+  useEffect(() => {
+    localStorage.setItem('mode', mode);
+  }, [mode]);
+
   return (
-    <div className="font-inter">
+    <div className={`font-inter ${mode === 'dark' ? 'darkMode' : ''}`}>
       <div className="px-4 ">
         <BrowserRouter>
-          <Nav />
-          <div className=" text-gray-700 max-w-[900px] mx-auto">
+          <Nav mode={mode} toggleMode={toggleMode} />
+          <div className="text-gray-700 max-w-[900px] mx-auto">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
