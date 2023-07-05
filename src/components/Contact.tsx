@@ -8,7 +8,7 @@ function Contact() {
       <div className="py-4">
         <button
           type="button"
-          className="font-semibold py-2 bg-yellow-400 text-yellow-800 p-4 rounded-2xl"
+          className="font-semibold py-2 bg-yellow-400 text-yellow-800 p-4 rounded-2xl px-28 "
         >
           Send me an email
         </button>

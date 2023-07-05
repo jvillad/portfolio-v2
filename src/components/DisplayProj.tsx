@@ -1,9 +1,6 @@
-import { PinnedItem } from '../../lib/interface/IGlobal';
+import { PinnedItem, DisplayProjProps } from '../../lib/interface/IGlobal';
 import SelectIcon from './SelectIcon';
 
-interface DisplayProjProps {
-  proj: PinnedItem;
-}
 function DisplayProj({ proj }: DisplayProjProps) {
   const project = proj;
 
