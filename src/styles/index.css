@@ -3,12 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.lightMode {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.darkMode {
-  background-color: #000000;
-  color: #ffffff !important;
+.dark {
+  @apply bg-black text-white;
 }

@@ -1,4 +1,4 @@
-import { PinnedItem, DisplayProjProps } from '../../lib/interface/IGlobal';
+import { DisplayProjProps } from '../../lib/interface/IGlobal';
 import SelectIcon from './SelectIcon';
 
 function DisplayProj({ proj }: DisplayProjProps) {

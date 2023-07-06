@@ -7,7 +7,7 @@ function Nav({ mode, toggleMode }: NavProps) {
     <nav className="py-10 max-w-[900px] mx-auto text-md">
       <div className="flex flex-wrap justify-between mx-2 items-center md:py-0">
         {/* my name */}
-        <div className="text-gray-900 font-bold">
+        <div className="font-bold">
           <a href="/" className="text-xl font-inter">
             John Vill
           </a>
@@ -64,10 +64,10 @@ function Nav({ mode, toggleMode }: NavProps) {
         <div
           className={` ${
             !open && 'hidden'
-          }  w-full text-center text-gray-600 md:flex md:items-center md:justify-between md:w-3/5`}
+          }  w-full text-center md:flex md:items-center md:justify-between md:w-3/5`}
         >
           <div className="pt-10 pb-2 md:pt-2">
-            <a href="/" className="hover:text-rose-600">
+            <a href="/projects" className="hover:text-rose-600">
               Projects
             </a>
           </div>
@@ -85,7 +85,12 @@ function Nav({ mode, toggleMode }: NavProps) {
           </div>
           <hr />
           <div className="py-3 flex justify-center items-center">
-            <a href="/" className="hover:text-rose-600">
+            <a
+              href="https://github.com/jvillad"
+              target="_blank"
+              className="hover:text-rose-600"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -103,7 +108,12 @@ function Nav({ mode, toggleMode }: NavProps) {
             </a>
           </div>
           <div className="py-3 flex justify-center  items-center">
-            <a href="/" className="hover:text-rose-600">
+            <a
+              href="https://www.linkedin.com/in/jyvill/"
+              target="_blank"
+              className="hover:text-rose-600"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -133,7 +143,7 @@ function Nav({ mode, toggleMode }: NavProps) {
           <div className="py-3">
             <button
               type="button"
-              className="relative flex items-center justify-center w-10 h-10 rounded-full bg-gray-300 focus:outline-none"
+              className="relative flex items-center justify-center w-10 h-10 rounded-full focus:outline-none bg-black"
               onClick={toggleMode}
             >
               {mode === 'light' ? (
@@ -143,7 +153,7 @@ function Nav({ mode, toggleMode }: NavProps) {
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="currentColor"
+                  stroke="white"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

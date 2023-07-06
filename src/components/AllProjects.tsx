@@ -16,7 +16,9 @@ function Projects() {
 
   return (
     <section className="max-w-[1200px] mx-auto px-[16px]">
-      <div className="py-10 text-[24px]">Some things I have built:</div>
+      <div className="my-10">
+        <p className="text-[20px]">Some things I have built and worked on</p>
+      </div>
       <div className="grid grid-cols-1 place-content-center md:grid-cols-2 md:place-content-center">
         {pinnedItems &&
           pinnedItems.map((proj) => (
@@ -25,7 +27,7 @@ function Projects() {
             </div>
           ))}
       </div>
-      <p className="pt-4 text-xl">
+      <p className="pt-4 text-xl text-center my-10">
         All of my work can be seen through my{' '}
         <a
           href="/"

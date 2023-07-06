@@ -2,14 +2,26 @@ import TechStack from './TechStack';
 
 function About() {
   return (
-    <div className="h-[1050px] max-h-full text-gray-700 max-w-[700px] pt-[50px] mx-10">
-      <h1 className="text-[32px] pb-10">Some fun facts about me: </h1>
+    <div className="h-[1050px] max-h-full  max-w-[700px] pt-[50px] mx-10">
+      <div className="mb-5">
+        <h1 className="text-[32px] pb-5">About Me</h1>
+        <p className="mb-2">
+          Hello! I am John-Rey I am an aspiring software developer based in
+          Sydney. Results-driven with a strong education background in
+          programming and passion for developing web applications.
+        </p>
+        <p>
+          I derive great enjoyment from building web applications. The process
+          is fun and exciting, making the experience truly engaging. My main
+          weapon for creating web apps are ASP.Net Core, JavaScript/TypeScript,
+          HTML and CSS!
+        </p>
+      </div>
       <div>
-        <p>📍 Based in Sydney, Australia</p>
-        <p>😅 I do enjoy creating web apps!</p>
+        <h1 className="text-[26px] pb-5">A bit of fun fact</h1>
         <p>
           🏙️ When I&apos;m not on my computer experimenting, you can find me at
-          MTG meetups.
+          Magic The Gathering meetups.
         </p>
         <p>🤓 I like video games.. A lot</p>
         <p>🐶 Have a bias for doggos. In fact we have 11 🐶 back at home.</p>
