@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Nav from './components/Nav';
 import '@fontsource/ubuntu';
@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Home from './components/Home';
 import AllProjects from './components/AllProjects';
+import { prefetchData } from './apollo';
 
 function App() {
   const storedMode = localStorage.getItem('mode');
@@ -16,6 +17,10 @@ function App() {
     setMode(newMode);
     localStorage.setItem('mode', newMode);
   };
+
+  useEffect(() => {
+    prefetchData();
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('mode', mode);
@@ -33,6 +38,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<AllProjects />} />
+              <Route path="/*" element={<Navigate to="/" />} />
             </Routes>
           </div>
         </BrowserRouter>

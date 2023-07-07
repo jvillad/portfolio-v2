@@ -24,46 +24,48 @@ const apolloClient = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-apolloClient
-  .query({
-    query: gql`
-      {
-        user(login: "jvillad") {
-          pinnedItems(first: 6) {
-            totalCount
-            edges {
-              node {
-                ... on Repository {
-                  id
-                  name
-                  url
-                  languages(first: 100) {
-                    nodes {
-                      name
+const prefetchData = async () => {
+  return apolloClient
+    .query({
+      query: gql`
+        {
+          user(login: "jvillad") {
+            pinnedItems(first: 6) {
+              totalCount
+              edges {
+                node {
+                  ... on Repository {
+                    id
+                    name
+                    url
+                    languages(first: 100) {
+                      nodes {
+                        name
+                      }
                     }
+                    description
+                    openGraphImageUrl
                   }
-                  description
-                  openGraphImageUrl
                 }
               }
             }
           }
         }
-      }
-    `,
-  })
-  .then(({ data }) => {
-    const { pinnedItems } = data.user;
-    apolloClient.cache.writeQuery({
-      query: gql`
-        query GetPinnedItems {
-          pinnedItems @client
-        }
       `,
-      data: {
-        pinnedItems,
-      },
+    })
+    .then(({ data }) => {
+      const { pinnedItems } = data.user;
+      apolloClient.cache.writeQuery({
+        query: gql`
+          query GetPinnedItems {
+            pinnedItems @client
+          }
+        `,
+        data: {
+          pinnedItems,
+        },
+      });
     });
-  });
+};
 
-export default apolloClient;
+export { apolloClient, prefetchData };
