@@ -30,7 +30,9 @@ function Projects() {
       <p className="pt-4 text-xl text-center my-10">
         All of my work can be seen through my{' '}
         <a
-          href="/"
+          href="https://github.com/jvillad"
+          target="_blank"
+          rel="noreferrer"
           className="text-rose-600 hover:underline hover:underline-offset-4 hover:text-rose-900"
         >
           GitHub
