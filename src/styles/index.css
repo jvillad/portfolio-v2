@@ -4,5 +4,5 @@
 @tailwind utilities;
 
 .dark {
-  @apply bg-black text-white;
+  @apply bg-[#030712] text-[#fbfffb];
 }

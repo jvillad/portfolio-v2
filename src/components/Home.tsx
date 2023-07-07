@@ -1,7 +1,6 @@
 import Contact from './Contact';
 import Intro from './Intro';
 import MainProjects from './MainProjects';
-import TechStack from './TechStack';
 
 function Home() {
   return (
@@ -9,7 +8,9 @@ function Home() {
       <Intro />
       {/* <TechStack /> */}
       <MainProjects />
-      <Contact />
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 }
