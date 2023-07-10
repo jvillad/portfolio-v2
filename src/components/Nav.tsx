@@ -20,9 +20,6 @@ function Nav({ mode, toggleMode }: NavProps) {
       <div className="flex flex-wrap justify-between mx-2 items-center md:py-0">
         {/* my name + ui-toggle */}
         <div className="py-3 font-bold flex items-center gap-10">
-          <a href="/" className="text-xl font-inter">
-            John Vill
-          </a>
           <button
             type="button"
             className="relative flex items-center justify-center w-10 h-10 rounded-full focus:outline-none bg-black"
@@ -73,6 +70,9 @@ function Nav({ mode, toggleMode }: NavProps) {
               }`}
             />
           </button>
+          <a href="/" className="text-xl font-inter">
+            John Villademosa
+          </a>
         </div>
         {!open ? (
           <button
@@ -203,7 +203,7 @@ function Nav({ mode, toggleMode }: NavProps) {
               target="_blank"
               rel="noreferrer"
               href="https://res.cloudinary.com/supremevillad/image/upload/v1688697647/JohnReyVillademosa_Resume.pdf?fbclid=IwAR1cK8GzO7_nXb9sCakdgAQc3z7vSrifT8nBnccWnJTnznmCP1w-gBpTcdY"
-              className="bg-yellow-400 p-3 text-yellow-800 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
+              className="bg-[#6b62ff] p-3 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
             >
               <span className="font-light">Resumé</span>
             </a>

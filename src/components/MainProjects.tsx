@@ -41,7 +41,7 @@ function MainProjects() {
               href="https://beanscenecafe.azurewebsites.net/"
               target="_blank"
               rel="noreferrer"
-              className="bg-yellow-400 p-2 text-yellow-800 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
             >
               Visit Site
             </a>
@@ -87,7 +87,7 @@ function MainProjects() {
               href="https://easychecklist.netlify.app/"
               target="_blank"
               rel="noreferrer"
-              className="bg-yellow-400 p-2 text-yellow-800 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
             >
               Visit Site
             </a>
