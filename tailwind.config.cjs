@@ -7,6 +7,7 @@ module.exports = {
         ubuntu: ['ubuntu'],
         poppins: ['Inter'],
         raleway: ['Raleway'],
+        quicksand: ['Quicksand'],
       },
     },
   },

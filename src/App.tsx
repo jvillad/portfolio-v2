@@ -28,7 +28,9 @@ function App() {
 
   return (
     <div
-      className={`font-inter text-slate-700 ${mode === 'dark' ? 'dark' : ''}`}
+      className={`font-quicksand text-slate-700 ${
+        mode === 'dark' ? 'dark' : ''
+      }`}
     >
       <div className="px-4">
         <BrowserRouter>
