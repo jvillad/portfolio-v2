@@ -6,9 +6,9 @@ function About() {
       <div className="mb-5">
         <h1 className="text-[32px] pb-5">About Me</h1>
         <p className="mb-2">
-          Hello! I am John-Rey I am an aspiring software developer based in
-          Sydney. Results-driven with a strong education background in
-          programming and passion for developing web applications.
+          Hello! I am John-Rey, I am a software developer based in Sydney.
+          Results-driven with a strong education background in programming and
+          passion for developing web applications.
         </p>
         <p>
           I derive great enjoyment from building web applications. The process
@@ -20,8 +20,9 @@ function About() {
       <div>
         <h1 className="text-[26px] pb-5">A bit of fun fact</h1>
         <p>
-          🏙️ When I&apos;m not on my computer experimenting, you can find me at
-          Magic The Gathering meetups.
+          🏃‍♂️ When I&apos;m not on my computer experimenting or coding,
+          you&apos;ll often find me out for a run. (best route is Manly to
+          Neutral Bay)
         </p>
         <p>🤓 I like video games.. A lot</p>
         <p>🐶 Have a bias for doggos. In fact we have 11 🐶 back at home.</p>

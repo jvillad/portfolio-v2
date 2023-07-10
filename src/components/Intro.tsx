@@ -18,7 +18,7 @@ function Intro() {
               John Villademosa
             </span>
           </p>
-          <p className="pb-4 text-2xl">An aspiring Software Developer.</p>
+          <p className="pb-4 text-2xl">A Software Developer.</p>
         </div>
         <div className="mb-8">
           <p className="text-md md:text-lg leading-relaxed">
