@@ -19,7 +19,10 @@ function Contact() {
             </div>
             <div className="mt-8 text-center">
               <div>
-                <img src="src/assets/contact.svg" alt="" />
+                <img
+                  src="./assets/contact.svg"
+                  alt="contact form illustration"
+                />
               </div>
             </div>
           </div>
