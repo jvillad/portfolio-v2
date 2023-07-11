@@ -202,7 +202,7 @@ function Nav({ mode, toggleMode }: NavProps) {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://res.cloudinary.com/supremevillad/image/upload/v1688697647/JohnReyVillademosa_Resume.pdf?fbclid=IwAR1cK8GzO7_nXb9sCakdgAQc3z7vSrifT8nBnccWnJTnznmCP1w-gBpTcdY"
+              href="https://docs.google.com/document/d/1_s2LZm59VoMKrBdTJiWlZrJ_O7auVI82/edit?usp=sharing&ouid=110758344186896324855&rtpof=true&sd=true"
               className="bg-[#6b62ff] p-3 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
             >
               <span className="font-light">Resumé</span>
