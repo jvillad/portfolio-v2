@@ -55,7 +55,52 @@ function MainProjects() {
           </p>
           <h2 className="text-2xl font-bold mb-2">
             <a
-              href="https://beanscenecafe.azurewebsites.net/"
+              href="https://worldwideweeb.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              World Wide Weeb
+            </a>
+          </h2>
+          <p className="mb-10 p-1">
+            Allows you to search and display all the details about your favorite
+            anime, including trailers, characters, and status. It also shows
+            what is trending, the top airing anime, and the goated animes.
+          </p>
+          <p>Tech Stack</p>
+          <ul className="flex justify-between font-light text-sm sm:text-right">
+            <li>NextJS</li>
+            <li>Prisma</li>
+            <li>TailwindCSS</li>
+            <li>MongoDb</li>
+          </ul>
+        </div>
+        <div className="lg:w-1/2 relative flex justify-center items-center">
+          <img
+            src="https://res.cloudinary.com/supremevillad/image/upload/v1689326202/Screenshot_2023-07-14_at_7.15.08_pm_qnawyt.png"
+            alt="World wide weeb thumbnail"
+            className="w-full opacity-75 transition-opacity duration-300 hover:opacity-100 rounded-md"
+          />
+          <div className="absolute -bottom-9 left-0 right-0 text-white flex justify-center py-2">
+            <a
+              href="https://worldwideweeb.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
+            >
+              Visit Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col lg:flex-row items-center my-20 sm:my-40 sm:flex-row gap-5">
+        <div className="lg:w-1/2 lg:mr-4">
+          <p className="font-extralight text-xs text-rose-600">
+            Featured Project
+          </p>
+          <h2 className="text-2xl font-bold mb-2">
+            <a
+              href="https://easychecklist.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -69,7 +114,7 @@ function MainProjects() {
             storage of all your tasks.
           </p>
           <p>Tech Stack</p>
-          <ul className="flex justify-between font-light text-sm sm:text-right">
+          <ul className="flex justify-between font-light text-sm">
             <li>Vite</li>
             <li>React</li>
             <li>TailwindCSS</li>

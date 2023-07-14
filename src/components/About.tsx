@@ -25,7 +25,9 @@ function About() {
           Neutral Bay)
         </p>
         <p>🤓 I like video games.. A lot</p>
+        <p>⌨️ Into custom mechanical keyboards </p>
         <p>🐶 Have a bias for doggos. In fact we have 11 🐶 back at home.</p>
+
         <TechStack />
       </div>
     </div>
