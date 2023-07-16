@@ -8,7 +8,7 @@ function MainProjects() {
           </p>
           <h2 className="text-2xl font-bold mb-2">
             <a
-              href="https://beanscenecafe.azurewebsites.net/"
+              href="https://beanscenerestaurant.azurewebsites.net/"
               target="_blank"
               rel="noreferrer"
             >
@@ -38,7 +38,7 @@ function MainProjects() {
           />
           <div className="absolute -bottom-9 left-0 right-0 text-white flex justify-center py-2">
             <a
-              href="https://beanscenecafe.azurewebsites.net/"
+              href="https://beanscenerestaurant.azurewebsites.net/"
               target="_blank"
               rel="noreferrer"
               className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
