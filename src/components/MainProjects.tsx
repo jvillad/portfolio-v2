@@ -36,14 +36,22 @@ function MainProjects() {
             alt="Beanscene Reservation Screenshot"
             className="w-full opacity-75 transition-opacity duration-300 hover:opacity-100 rounded-md"
           />
-          <div className="absolute -bottom-9 left-0 right-0 text-white flex justify-center py-2">
+          <div className="absolute -bottom-9 left-0 right-0 text-white flex justify-center py-2 gap-2">
             <a
               href="https://beanscenerestaurant.azurewebsites.net/"
               target="_blank"
               rel="noreferrer"
-              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl w-24 text-center"
             >
               Visit Site
+            </a>
+            <a
+              href="https://github.com/jvillad/dotnetcore-mvc-cafe-reservation"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl w-24 text-center"
+            >
+              Repo
             </a>
           </div>
         </div>
@@ -81,14 +89,22 @@ function MainProjects() {
             alt="World wide weeb thumbnail"
             className="w-full opacity-75 transition-opacity duration-300 hover:opacity-100 rounded-md"
           />
-          <div className="absolute -bottom-9 left-0 right-0 text-white flex justify-center py-2">
+          <div className="absolute -bottom-9 left-0 right-0 text-white flex justify-center py-2 gap-2">
             <a
               href="https://worldwideweeb.vercel.app/"
               target="_blank"
               rel="noreferrer"
-              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl w-24 text-center"
             >
               Visit Site
+            </a>
+            <a
+              href="https://github.com/jvillad/world-wide-weeb"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl w-24 text-center"
+            >
+              Repo
             </a>
           </div>
         </div>
@@ -127,14 +143,22 @@ function MainProjects() {
             alt="Beanscene Reservation Screenshot"
             className="w-full opacity-75 transition-opacity duration-300 hover:opacity-100 rounded-md"
           />
-          <div className="absolute -bottom-9 left-0 right-0 text-white flex justify-center py-2">
+          <div className="absolute -bottom-9 left-0 right-0 text-white flex justify-center py-2 gap-2">
             <a
               href="https://easychecklist.netlify.app/"
               target="_blank"
               rel="noreferrer"
-              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl w-24 text-center"
             >
               Visit Site
+            </a>
+            <a
+              href="https://github.com/jvillad/todo-app-firebase"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-[#6b62ff] p-2 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl w-24 text-center"
+            >
+              Repo
             </a>
           </div>
         </div>
