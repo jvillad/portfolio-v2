@@ -24,8 +24,21 @@ function About() {
           you&apos;ll often find me out for a run. (best route is Manly to
           Neutral Bay)
         </p>
-        <p>🤓 I like video games.. A lot</p>
-        <p>⌨️ Into custom mechanical keyboards </p>
+        <p>🤓 I like video games.. A lot (mostly strategy games)</p>
+        <p>
+          ⌨️ Into custom mechanical keyboards..{' '}
+          <a
+            href="https://www.facebook.com/boontribe.ph/"
+            className="group inline-block relative"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="text-blue-500 group-hover:text-pink-500 transition-colors duration-300">
+              Boon Tribe
+            </span>
+            <span className="absolute top-0 left-0 w-full h-full bg-pink-500 opacity-0 blur-md transform scale-105 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100" />
+          </a>
+        </p>
         <p>🐶 Have a bias for doggos. In fact we have 11 🐶 back at home.</p>
 
         <TechStack />

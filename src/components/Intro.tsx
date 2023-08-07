@@ -12,13 +12,13 @@ function Intro() {
         <div className="mt-6">
           <p>
             <span className="text-xl">
-              <span className="text-rose-600">👋🏼 Yo! </span> my name is
+              <span className="text-rose-600">Yo! </span> my name is
             </span>
             <span className="block text-[50px] md:text-[54px] font-semibold">
               John Villademosa
             </span>
           </p>
-          <p className="pb-4 text-2xl">A Software Developer.</p>
+          <p className="pb-4 text-2xl">A Software Engineer.</p>
         </div>
         <div className="mb-8">
           <p className="text-md md:text-lg leading-relaxed">
