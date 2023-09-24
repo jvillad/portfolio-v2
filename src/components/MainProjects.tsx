@@ -3,9 +3,9 @@ import { Fade } from 'react-awesome-reveal';
 function MainProjects() {
   return (
     <section id="projects" className="max-w-[1200px] mx-auto px-[16px]">
-      <h1 className="mb-20 sm:mb-30 text-3xl font-bold">Main Projects</h1>
+      <h1 className="mb-20 sm:mb-8 text-3xl font-bold">Main Projects</h1>
       <Fade cascade damping={0.3} duration={800}>
-        <div className="flex flex-col lg:flex-row mb-20 sm:mb-30 items-center sm:flex-row gap-5">
+        <div className="flex flex-col lg:flex-row mb-20 sm:mb-40 items-center sm:flex-row gap-5">
           <div className="lg:w-1/2 lg:mr-4">
             <p className="font-extralight text-xs text-rose-600">
               Featured Project
@@ -165,7 +165,7 @@ function MainProjects() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row items-center my-20 sm:my-40 sm:flex-row gap-5">
+        <div className="flex flex-col lg:flex-row items-center my-20 sm:mt-40 sm:mb-20 sm:flex-row gap-5">
           <div className="lg:w-1/2 lg:mr-4">
             <p className="font-extralight text-xs text-rose-600">
               Featured Project
@@ -220,6 +220,14 @@ function MainProjects() {
           </div>
         </div>
       </Fade>
+      <div className="text-center">
+        <a href="/projects" className="relative group">
+          <span className="text-2xl font-bold">
+            View Other Pinned Projects 🚀
+          </span>
+          <span className="absolute -bottom-1 left-0 w-0 h-[2px] rounded-md bg-rose-600 transition-all group-hover:w-full" />
+        </a>
+      </div>
     </section>
   );
 }

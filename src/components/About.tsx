@@ -2,7 +2,7 @@ import TechStack from './TechStack';
 
 function About() {
   return (
-    <div className="h-[1050px] max-w-[700px] mx-10">
+    <div className="h-[900px] max-w-[700px] mx-10">
       <div className="mb-5">
         <h1 className="text-3xl font-bold pb-5">About Me</h1>
         <p className="mb-2">

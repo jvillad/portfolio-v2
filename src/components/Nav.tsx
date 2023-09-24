@@ -151,9 +151,15 @@ function Nav({ mode, toggleMode }: NavProps) {
           </div>
           <hr />
           <div className="py-2">
-            <a href="/projects" className="hover:text-rose-600">
-              Other Projects
-            </a>
+            <Link
+              to="projects"
+              smooth
+              offset={-100}
+              duration={500}
+              className="hover:text-rose-600 hover:cursor-pointer"
+            >
+              Projects
+            </Link>
           </div>
           <hr />
           <div className="py-3 flex justify-center items-center">
