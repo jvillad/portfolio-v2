@@ -1,4 +1,5 @@
 import { Fade } from 'react-awesome-reveal';
+import { Link } from 'react-scroll';
 
 function Intro() {
   return (
@@ -34,8 +35,8 @@ function Intro() {
           </div>
         </div>
         <div className="pb-[220px]">
-          <div className="border-2 border-gray-300 rounded-full p-2 hover:text-rose-600 hover:cursor-pointer">
-            <a href="#projects">
+          <div className="border-2 border-gray-300 rounded-full p-2 hover:text-rose-600">
+            <Link to="about" smooth offset={-100} duration={500}>
               <svg
                 viewBox="0 0 24 24"
                 width="24"
@@ -45,12 +46,12 @@ function Intro() {
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="animate-bounce mt-2"
+                className="animate-bounce mt-2 hover:cursor-pointer"
               >
                 <line x1="12" y1="5" x2="12" y2="19" />
                 <polyline points="19 12 12 19 5 12" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </Fade>

@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import Nav from './components/Nav';
 import '@fontsource/ubuntu';
 import Footer from './components/Footer';
-import About from './components/About';
 import Home from './components/Home';
 import AllProjects from './components/AllProjects';
 import { prefetchData } from './apollo';
@@ -38,7 +37,6 @@ function App() {
           <div className="max-w-[900px] mx-auto">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
               <Route path="/projects" element={<AllProjects />} />
               <Route path="/*" element={<Navigate to="/" />} />
             </Routes>

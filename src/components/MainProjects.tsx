@@ -3,9 +3,7 @@ import { Fade } from 'react-awesome-reveal';
 function MainProjects() {
   return (
     <section id="projects" className="max-w-[1200px] mx-auto px-[16px]">
-      <h1 className="mb-20 sm:mb-30 text-3xl text-center font-bold">
-        Main Projects
-      </h1>
+      <h1 className="mb-20 sm:mb-30 text-3xl font-bold">Main Projects</h1>
       <Fade cascade damping={0.3} duration={800}>
         <div className="flex flex-col lg:flex-row mb-20 sm:mb-30 items-center sm:flex-row gap-5">
           <div className="lg:w-1/2 lg:mr-4">

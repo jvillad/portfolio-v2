@@ -2,20 +2,20 @@ import TechStack from './TechStack';
 
 function About() {
   return (
-    <div className="h-[1050px] max-h-full  max-w-[700px] pt-[50px] mx-10">
+    <div className="h-[1050px] max-w-[700px] mx-10">
       <div className="mb-5">
-        <h1 className="text-[32px] pb-5">About Me</h1>
+        <h1 className="text-3xl font-bold pb-5">About Me</h1>
         <p className="mb-2">
-          Hello! I am John-Rey, I am a software developer based in Sydney.
+          Hello! I am John-Rey, I am a Software Engineer based in Sydney.
           Results-driven with a strong education background in programming and
           passion for developing web applications.
         </p>
         <p>
-          I derive great enjoyment from building web applications. The process
-          is fun and exciting, making the experience truly engaging. My main
-          weapon for creating web apps are ASP.Net Core, SQL, MongoDB, React,
-          NextJS, Angular, JavaScript/TypeScript, HTML and CSS! You can throw in
-          Bootstrap and Tailwind as well. 😎
+          I derive great enjoyment from building web applications. For me, the
+          process is fun and exciting, making the experience truly engaging. My
+          main weapon for creating web apps are ASP.Net Core, SQL, MongoDB,
+          React, NextJS, Angular, JavaScript/TypeScript and the good old HTML +
+          CSS combo! You can throw in Bootstrap and Tailwind as well. 😎
         </p>
       </div>
       <div>
