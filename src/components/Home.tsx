@@ -6,7 +6,6 @@ function Home() {
   return (
     <>
       <Intro />
-      {/* <TechStack /> */}
       <MainProjects />
       <section id="contact">
         <Contact />

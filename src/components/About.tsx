@@ -13,8 +13,9 @@ function About() {
         <p>
           I derive great enjoyment from building web applications. The process
           is fun and exciting, making the experience truly engaging. My main
-          weapon for creating web apps are ASP.Net Core, JavaScript/TypeScript,
-          HTML and CSS!
+          weapon for creating web apps are ASP.Net Core, SQL, MongoDB, React,
+          NextJS, Angular, JavaScript/TypeScript, HTML and CSS! You can throw in
+          Bootstrap and Tailwind as well. 😎
         </p>
       </div>
       <div>

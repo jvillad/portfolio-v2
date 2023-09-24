@@ -16,9 +16,8 @@ function Nav({ mode, toggleMode }: NavProps) {
     }, 100);
   };
   return (
-    <nav className="py-10 max-w-[1200px] mx-auto text-md">
+    <nav className="pt-8 max-w-[1200px] mx-auto text-md">
       <div className="flex flex-wrap justify-between mx-2 items-center md:py-0">
-        {/* my name + ui-toggle */}
         <div className="py-3 font-bold flex items-center gap-10">
           <button
             type="button"
@@ -70,7 +69,7 @@ function Nav({ mode, toggleMode }: NavProps) {
               }`}
             />
           </button>
-          <a href="/" className="text-xl font-inter">
+          <a href="/" className="text-xl hidden sm:inline ">
             John Villademosa
           </a>
         </div>
@@ -122,7 +121,7 @@ function Nav({ mode, toggleMode }: NavProps) {
             </svg>
           </button>
         )}
-        {/* second div */}
+
         <div
           className={` ${
             !open && 'hidden'
@@ -196,16 +195,6 @@ function Nav({ mode, toggleMode }: NavProps) {
                 <rect x="2" y="9" width="4" height="12" />
                 <circle cx="4" cy="4" r="2" />
               </svg>
-            </a>
-          </div>
-          <div className="py-3">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://docs.google.com/document/d/1_s2LZm59VoMKrBdTJiWlZrJ_O7auVI82/edit?usp=sharing&ouid=110758344186896324855&rtpof=true&sd=true"
-              className="bg-[#6b62ff] p-3 text-gray-100 rounded-lg hover:bg-rose-600 hover:text-rose-50 shadow-xl"
-            >
-              <span className="font-light">Resumé</span>
             </a>
           </div>
         </div>
