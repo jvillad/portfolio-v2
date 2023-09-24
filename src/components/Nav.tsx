@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { NavProps } from '../../lib/interface/IGlobal';
 
 function Nav({ mode, toggleMode }: NavProps) {
@@ -128,15 +129,15 @@ function Nav({ mode, toggleMode }: NavProps) {
           }  w-full text-center md:flex md:items-center md:justify-between md:w-3/5`}
         >
           <div className="pt-10 pb-2 md:pt-2">
-            <a href="/projects" className="hover:text-rose-600">
-              Projects
-            </a>
-          </div>
-          <hr />
-          <div className="py-2">
-            <a href="/about" className="hover:text-rose-600">
+            <Link
+              to="about"
+              smooth
+              offset={-100}
+              duration={500}
+              className="hover:text-rose-600 hover:cursor-pointer"
+            >
               About
-            </a>
+            </Link>
           </div>
           <hr />
           <div className="py-2">
@@ -147,6 +148,12 @@ function Nav({ mode, toggleMode }: NavProps) {
             >
               Contact
             </button>
+          </div>
+          <hr />
+          <div className="py-2">
+            <a href="/projects" className="hover:text-rose-600">
+              Other Projects
+            </a>
           </div>
           <hr />
           <div className="py-3 flex justify-center items-center">

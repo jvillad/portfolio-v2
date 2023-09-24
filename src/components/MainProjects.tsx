@@ -44,7 +44,7 @@ function MainProjects() {
                   />
                 </svg>
               </span>
-              <span className="text-purple-600 hover:text-rose-600">
+              <span className="text-[#6b62ff] hover:text-rose-600">
                 More about this project
               </span>
             </a>
@@ -108,7 +108,7 @@ function MainProjects() {
               animes.
             </p>
             <a href="/" className="inline-flex gap-2 p-1 items-center my-4 ">
-              <span className="text-purple-600 hover:text-rose-600">
+              <span className="text-[#6b62ff] hover:text-rose-600">
                 More about this project
               </span>
               <span className="animate-left-bounce">
