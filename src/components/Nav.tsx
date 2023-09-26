@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-scroll';
 import { NavProps } from '../../lib/interface/IGlobal';
 
 function Nav({ mode, toggleMode }: NavProps) {
@@ -16,13 +15,14 @@ function Nav({ mode, toggleMode }: NavProps) {
       }
     }, 100);
   };
+
   return (
     <nav className="pt-8 max-w-[1200px] mx-auto text-md">
       <div className="flex flex-wrap justify-between mx-2 items-center md:py-0">
         <div className="py-3 font-bold flex items-center gap-10">
           <button
             type="button"
-            className="relative flex items-center justify-center w-10 h-10 rounded-full focus:outline-none bg-black"
+            className="relative flex items-center justify-center w-10 h-10 rounded-full focus:outline-none bg-[#161615]"
             onClick={toggleMode}
           >
             {mode === 'light' ? (
@@ -128,16 +128,40 @@ function Nav({ mode, toggleMode }: NavProps) {
             !open && 'hidden'
           }  w-full text-center md:flex md:items-center md:justify-between md:w-3/5`}
         >
+          <div className="py-2">
+            <button
+              type="button"
+              className="hover:text-rose-600 hover:cursor-pointer"
+              onClick={() => {
+                navigate('/');
+                setTimeout(() => {
+                  const projectSection = document.getElementById('projects');
+                  if (projectSection) {
+                    projectSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }, 100);
+              }}
+            >
+              Projects
+            </button>
+          </div>
+          <hr />
+          <div className="py-2">
+            <a
+              href="/blog"
+              className="hover:text-rose-600 hover:cursor-pointer"
+            >
+              Blog
+            </a>
+          </div>
+          <hr />
           <div className="pt-10 pb-2 md:pt-2">
-            <Link
-              to="about"
-              smooth
-              offset={-100}
-              duration={500}
+            <a
+              href="/about"
               className="hover:text-rose-600 hover:cursor-pointer"
             >
               About
-            </Link>
+            </a>
           </div>
           <hr />
           <div className="py-2">
@@ -148,18 +172,6 @@ function Nav({ mode, toggleMode }: NavProps) {
             >
               Contact
             </button>
-          </div>
-          <hr />
-          <div className="py-2">
-            <Link
-              to="projects"
-              smooth
-              offset={-100}
-              duration={500}
-              className="hover:text-rose-600 hover:cursor-pointer"
-            >
-              Projects
-            </Link>
           </div>
           <hr />
           <div className="py-3 flex justify-center items-center">

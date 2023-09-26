@@ -2,7 +2,7 @@ import TechStack from './TechStack';
 
 function About() {
   return (
-    <div className="h-[900px] max-w-[700px] mx-10">
+    <div className="h-[900px] max-w-[700px] mx-10 my-10">
       <div className="mb-5">
         <h1 className="text-3xl font-bold pb-5">About Me</h1>
         <p className="mb-2">
@@ -40,8 +40,7 @@ function About() {
             <span className="absolute top-0 left-0 w-full h-full bg-pink-500 opacity-0 blur-md transform scale-105 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100" />
           </a>
         </p>
-        <p>🐶 Have a bias for doggos. In fact we have 11 🐶 back at home.</p>
-
+        <p>🐶 Love for doggos. In fact we have 11 🐶 back at home.</p>
         <TechStack />
       </div>
     </div>

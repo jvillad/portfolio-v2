@@ -1,15 +1,30 @@
-import About from './About';
+import { useEffect } from 'react';
+import { useQueryClient } from 'react-query';
 import Contact from './Contact';
 import Intro from './Intro';
 import MainProjects from './MainProjects';
 
 function Home() {
+  const queryClient = useQueryClient();
+  useEffect(() => {
+    queryClient.prefetchQuery(
+      'blog-posts',
+      async () => {
+        const response = await fetch(
+          'https://jv-notion-server.onrender.com/api/blog-posts'
+        );
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const blogs = await response.json();
+        return blogs;
+      },
+      { staleTime: 10000 }
+    );
+  }, [queryClient]);
   return (
     <>
       <Intro />
-      <section id="about">
-        <About />
-      </section>
       <MainProjects />
       <section id="contact">
         <Contact />

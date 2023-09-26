@@ -21,5 +21,8 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 0,
+    'import/no-extraneous-dependencies': 'off',
+    'react/jsx-boolean-value': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 };

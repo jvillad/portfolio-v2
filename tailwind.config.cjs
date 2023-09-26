@@ -31,6 +31,7 @@ module.exports = {
             animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
           },
         },
+
         text: {
           '0%, 100%': {
             'background-size': '200% 200%',
@@ -46,10 +47,12 @@ module.exports = {
         'right-bounce': 'right-bounce 1s infinite',
         'left-bounce': 'left-bounce 1s infinite',
         text: 'text 5s ease infinite',
+        spin: 'spin 10s linear infinite',
       },
     },
   },
 
-  plugins: [],
+  // eslint-disable-next-line global-require
+  plugins: [require('@tailwindcss/typography')],
   dark: 'class',
 };

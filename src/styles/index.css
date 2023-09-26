@@ -5,9 +5,17 @@
 @tailwind utilities;
 
 .dark {
-  @apply bg-[#030712] text-[#fbfffb];
+  @apply bg-[#161615] text-[#fbfffb];
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.circle-svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 66vmin;
+  transform-origin: center;
+  width: 66%;
 }
