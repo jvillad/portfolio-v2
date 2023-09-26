@@ -74,7 +74,7 @@ function Blog() {
               </div>
             );
           })
-        : ''}
+        : null}
     </div>
   );
 }
