@@ -17,13 +17,17 @@ function Post() {
   });
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="min-h-screen w-full flex items-center justify-center">
+        <p className="animate-pulse">Hold on, getting them posts</p>
+      </div>
+    );
   }
 
   return (
-    <div className="max-w-[700px] mx-auto">
+    <div className="max-w-[700px] mx-auto min-h-screen">
       <article className="prose lg:prose-xl my-10">
-        <ReactMarkdown>{data.parent}</ReactMarkdown>
+        <ReactMarkdown className="text-sm">{data.parent}</ReactMarkdown>
       </article>
     </div>
   );

@@ -9,7 +9,7 @@ function Intro() {
           cascade={true}
           direction="up"
           damping={0.5}
-          duration={400}
+          duration={800}
           triggerOnce={true}
         >
           <div className="w-32 md:w-64 h-40 md:h-80 mx-auto sm:mx-0 sm:mr-5 md:mr-8 flex items-center">

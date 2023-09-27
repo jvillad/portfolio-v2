@@ -1,10 +1,10 @@
 function TechStack() {
   return (
-    <section className="max-w-[1200px] mx-auto px-[16px] pt-[50px]">
+    <section className="max-w-[1200px] mx-auto pt-[50px]">
       <h2 className="text-xl font-bold">
         Technologies I’ve been using recently:
       </h2>
-      <div className="grid grid-cols-2 mx-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 mx-0 sm:mx-4">
         <div className="pt-5">
           <div className="flex items-center gap-3 my-2">
             <svg

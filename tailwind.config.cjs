@@ -42,11 +42,22 @@ module.exports = {
             'background-position': 'right center',
           },
         },
+        loader: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
       },
       animation: {
         'right-bounce': 'right-bounce 1s infinite',
         'left-bounce': 'left-bounce 1s infinite',
         text: 'text 5s ease infinite',
+        loader: 'loader 1s ease-in infinite',
         spin: 'spin 10s linear infinite',
       },
     },

@@ -12,10 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.circle-svg {
+.spin-svg {
   fill: currentColor;
   height: auto;
-  max-width: 66vmin;
+  max-width: 20%;
   transform-origin: center;
   width: 66%;
 }
