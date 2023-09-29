@@ -1,0 +1,155 @@
+.container {
+  padding: 0 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.container h1 {
+  font-size: 32px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container figcaption {
+  opacity: 0.6;
+}
+
+.name {
+  font-size: 36px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.code {
+  font-family: monospace;
+  background-color: rgb(242, 242, 242);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.pre {
+  background-color: rgb(242, 242, 242);
+  padding: 2px 4px;
+  margin: 20px 0;
+  line-height: 2.3;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.code_block {
+  padding: 20px;
+  font-family: monospace;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.file {
+  padding: 2px 4px;
+  text-decoration: none;
+}
+
+.file a {
+  color: inherit;
+}
+
+.file:hover {
+  background: rgba(55, 53, 47, 0.08);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bookmark {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.table {
+  border: 1px solid currentColor;
+  border-collapse: collapse;
+}
+.table th {
+  border: 1px solid currentColor;
+  background-color: rgb(242, 242, 242);
+  padding: 6px 12px;
+}
+.table td {
+  border: 1px solid currentColor;
+  padding: 6px 12px;
+}
+
+.row {
+  display: flex;
+}
+
+.row > div {
+  flex: 1;
+}
+
+.childPage {
+  border: 1px solid currentColor;
+  padding: 20px;
+  border-radius: 12px;
+}
+.quote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+}
+.quote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.quote p {
+  display: inline;
+}
+@media (prefers-color-scheme: dark) {
+  .code,
+  .table,
+  .pre {
+    background-color: rgb(15, 8, 28);
+  }
+  .file:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    border-radius: 2px;
+  }
+}
