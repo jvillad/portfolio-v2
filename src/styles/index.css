@@ -19,3 +19,44 @@ html {
   transform-origin: center;
   width: 66%;
 }
+
+@keyframes animate-dots {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-dots .dot-1,
+.animate-dots .dot-2,
+.animate-dots .dot-3 {
+  animation-name: animate-dots;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.animate-dots .dot-1 {
+  animation-delay: 0s;
+}
+
+.animate-dots .dot-2 {
+  animation-delay: 0.5s;
+}
+
+.animate-dots .dot-3 {
+  animation-delay: 1s;
+}

@@ -52,12 +52,23 @@ module.exports = {
             'background-position': 'right center',
           },
         },
+        postloader: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'center left',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'center right',
+          },
+        },
       },
       animation: {
         'right-bounce': 'right-bounce 1s infinite',
         'left-bounce': 'left-bounce 1s infinite',
         text: 'text 5s ease infinite',
         loader: 'loader 1s ease-in infinite',
+        postloader: 'postloader 0.5s ease infinite',
         spin: 'spin 10s linear infinite',
       },
     },

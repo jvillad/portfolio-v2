@@ -9,7 +9,15 @@ function Post() {
   const queryFn = () => fetch(url).then((res) => res.json());
   const { data, isLoading } = useQuery(queryKey, queryFn);
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="min-h-screen w-full flex items-center justify-center">
+        <span className="animate-dots text-2xl font-bold">
+          Loading<span className="dot-1 text-3xl">.</span>
+          <span className="dot-2 text-3xl">.</span>
+          <span className="dot-3 text-3xl">.</span>
+        </span>
+      </div>
+    );
   }
 
   return (
