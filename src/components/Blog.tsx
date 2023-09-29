@@ -9,7 +9,7 @@ dayjs.extend(localizedFormat);
 function Blog() {
   const { data, isLoading } = useQuery('blog-posts', async () => {
     const response = await fetch(
-      'https://jv-notion-server.onrender.com/api/blog-posts'
+      'https://notion-server.onrender.com/v1/api/blog-posts'
     );
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -42,7 +42,7 @@ function Blog() {
               return (
                 <div key={page.id} className="my-10">
                   <Link
-                    to={`/blog/${page.id}`}
+                    to={`/blog/${page.properties.Slug.formula.string}`}
                     className="transition duration-300 hover:scale-105"
                   >
                     <div className="flex flex-col rounded-xl shadow-lg overflow-hidden">
