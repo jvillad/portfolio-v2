@@ -45,7 +45,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<AllProjects />} />
                 <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/:pageId" element={<Post />} />
+                <Route path="/blog/:slug" element={<Post />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/*" element={<Navigate to="/" />} />
               </Routes>
