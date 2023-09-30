@@ -42,9 +42,12 @@ function MainProjects() {
                 />
               </svg>
             </span>
-            <span className="text-[#6b62ff] hover:text-rose-600">
+            <a
+              href="blog/myprocesscreatingthebeanscenewebapplication"
+              className="text-[#6b62ff] hover:text-rose-600"
+            >
               More about this project
-            </span>
+            </a>
           </a>
 
           <p>Tech Stack</p>
