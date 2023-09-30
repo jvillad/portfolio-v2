@@ -11,7 +11,7 @@ function Home() {
       'blog-posts',
       async () => {
         const response = await fetch(
-          'https://jv-notion-server.onrender.com/api/blog-posts'
+          'https://notion-server.onrender.com/v1/api/blog-posts'
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
